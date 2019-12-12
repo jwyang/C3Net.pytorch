@@ -13,7 +13,7 @@ The motivation behind our proposed C3Net is that:
 * Different neurons might respond to the same patterns and locations.
 
 <div style="color:#0000FF" align="center">
-<img src="figures/C3Net_motivation.png" width="850"/>
+<img src="figures/C3Net_motivation.png" width="650"/>
 </div>
 
 ## Training
