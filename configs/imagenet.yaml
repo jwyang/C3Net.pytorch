@@ -1,0 +1,24 @@
+data:
+  input_size: 224
+  traindir: "/srv/share/datasets/ImageNet/pytorch_folder/train"
+  valdir: "/srv/share/datasets/ImageNet/pytorch_folder/val"
+initialize:
+  seed: 1
+training:
+  batch_size: 512
+  workers: 8
+  distributed: False
+test:
+  batch_size: 256
+  workers: 8
+optimizer:
+  name: 'sgd'
+  lr: 0.1
+  lr_decay_gamma: 0.1
+  weight_decay: 1e-4
+  momentum: 0.9
+  lr_decay_schedule: (30, 60)
+  max_epoch: 90
+log:
+  print_interval: 20
+  checkpoint_interval: 2

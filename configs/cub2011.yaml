@@ -1,0 +1,21 @@
+data:
+  input_size: 224
+initialize:
+  seed: 1
+training:
+  batch_size: 32
+  workers: 8
+test:
+  batch_size: 128
+  workers: 8
+optimizer:
+  name: 'sgd'
+  lr: 0.001
+  lr_decay_gamma: 0.9
+  weight_decay: 1e-4
+  momentum: 0.9
+  lr_decay_schedule: (10, 20, 30, 40, 50, 60, 70, 80)
+  max_epoch: 80
+log:
+  print_interval: 20
+  checkpoint_interval: 2
