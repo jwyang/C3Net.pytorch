@@ -7,10 +7,6 @@ Pytorch implementation of our NeurIPS 2019 paper ["Cross-channel Communication N
 
 ## Introduction
 
-<div style="color:#0000FF" align="center">
-<img src="figures/C3Net_motivation.png" width="650"/>
-</div>
-
 As shown above, the motivation behind our proposed C3Net is that:
 
 * Neurons at the same layer do not directly interact with each other.
